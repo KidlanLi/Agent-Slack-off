@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #2c3e50;
+    background-color: #1a1a2e;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -40,12 +40,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #34495e;
+    background-color: #16213e;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #3498db, #2c3e50);
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -62,7 +62,7 @@ nav a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* Science Tips Section */
+/* News Section */
 .tips {
     padding: 4rem 0;
     background-color: #f5f7fa;
@@ -82,7 +82,7 @@ nav a:hover {
 }
 
 .tip-card h3 {
-    color: #2c3e50;
+    color: #0f3460;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #eee;
@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 .tip-content {
-    color: #34495e;
+    color: #16213e;
     line-height: 1.6;
 }
 
@@ -106,9 +106,14 @@ nav a:hover {
 }
 
 .tip-details h4, .safety-recommendations h4 {
-    color: #e74c3c;
+    color: #e94560;
     margin-bottom: 1rem;
     font-size: 1.3rem;
+}
+
+.tip-details p {
+    margin-bottom: 1.5rem;
+    color: #444;
 }
 
 .tip-details ul, .safety-recommendations ul {
@@ -124,16 +129,37 @@ nav a:hover {
 
 .tip-details li:before, .safety-recommendations li:before {
     content: "•";
-    color: #e74c3c;
+    color: #e94560;
     position: absolute;
     left: 0;
+}
+
+.quote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #e94560;
+    font-style: italic;
+}
+
+.quote p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #0f3460;
+}
+
+.quote cite {
+    display: block;
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 .tip-note {
     margin-top: 2rem;
     padding: 1rem;
     background-color: #f8f9fa;
-    border-left: 4px solid #e74c3c;
+    border-left: 4px solid #e94560;
     font-size: 0.95rem;
 }
 
@@ -145,13 +171,13 @@ nav a:hover {
 }
 
 .about h2 {
-    color: #2c3e50;
+    color: #0f3460;
     margin-bottom: 1.5rem;
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #1a1a2e;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -183,5 +209,13 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+    }
+    
+    .quote {
+        padding: 1rem;
+    }
+    
+    .quote p {
+        font-size: 1rem;
     }
 } 

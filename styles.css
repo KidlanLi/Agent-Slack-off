@@ -1,14 +1,11 @@
-/* 全局样式 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #333;
+    background-color: #f5f7fa;
 }
 
 .container {
@@ -17,179 +14,174 @@ body {
     padding: 0 20px;
 }
 
-/* 导航栏样式 */
+/* Header Styles */
 header {
-    background-color: #fff;
+    background-color: #2c3e50;
+    padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 20px 0;
+    gap: 2rem;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
+nav a {
+    color: white;
     text-decoration: none;
-    color: #333;
     font-weight: 500;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #2962ff;
+nav a:hover {
+    background-color: #34495e;
 }
 
-/* 主页英雄区域 */
+/* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    padding-top: 60px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    color: #1a237e;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .hero h2 {
-    font-size: 2rem;
-    color: #3949ab;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    color: #455a64;
-    max-width: 600px;
+/* Science Tips Section */
+.tips {
+    padding: 4rem 0;
+    background-color: #f5f7fa;
 }
 
-/* 章节样式 */
-section {
-    padding: 80px 0;
+.tip-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: transform 0.3s ease;
 }
 
-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #1a237e;
-    text-align: center;
+.tip-card:hover {
+    transform: translateY(-5px);
 }
 
-/* 关于部分 */
+.tip-card h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.tip-content {
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.tip-summary {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    color: #555;
+}
+
+.tip-details, .safety-recommendations {
+    margin: 1.5rem 0;
+}
+
+.tip-details h4, .safety-recommendations h4 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.tip-details ul, .safety-recommendations ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.tip-details li, .safety-recommendations li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.tip-details li:before, .safety-recommendations li:before {
+    content: "•";
+    color: #e74c3c;
+    position: absolute;
+    left: 0;
+}
+
+.tip-note {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #e74c3c;
+    font-size: 0.95rem;
+}
+
+/* About Section */
 .about {
     background-color: #fff;
-}
-
-.about p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 4rem 0;
     text-align: center;
 }
 
-/* 教育经历 */
-.education {
-    background-color: #f5f7fa;
+.about h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
 }
 
-.education-item {
-    background: #fff;
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-}
-
-.education-item h3 {
-    color: #1a237e;
-    margin-bottom: 10px;
-}
-
-/* 工作经验 */
-.experience {
-    background-color: #fff;
-}
-
-.experience-item {
-    background: #f8f9fa;
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.experience-item ul {
-    margin-top: 15px;
-    padding-left: 20px;
-}
-
-/* 联系方式 */
-.contact {
-    background-color: #f5f7fa;
-}
-
-.contact-info {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 0 15px;
-    color: #1a237e;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #2962ff;
-}
-
-/* 页脚 */
+/* Footer */
 footer {
-    background-color: #1a237e;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
     text-align: center;
 }
 
-/* 响应式设计 */
+/* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
     .hero h1 {
         font-size: 2.5rem;
     }
-
+    
     .hero h2 {
         font-size: 1.5rem;
     }
-
-    section h2 {
-        font-size: 2rem;
+    
+    .tip-card {
+        padding: 1.5rem;
+    }
+    
+    .tip-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .tip-summary {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 } 

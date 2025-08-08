@@ -49,11 +49,6 @@ for i, item in enumerate(data[1:], 2):  # Start from index 1 (talk #2)
             <div class="container">
                 <div class="talk-header">
                     <h1>Talk #{i}: {prompt}</h1>
-                    <div class="talk-meta">
-                        <span class="category">Category: {category}</span>
-                        <span class="date">Date: December 2024</span>
-                        <span class="speaker">Speaker: Anonymous</span>
-                    </div>
                 </div>
 
                 <div class="talk-body">
